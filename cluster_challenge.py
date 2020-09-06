@@ -11,7 +11,7 @@ data = pd.read_csv(r'C:\Users\viswa\Documents\UTD\Sophomore\Fall\ACM Research\Co
 
 #setting up the plot
 plt.figure(figsize=(7,7))
-plt.grid(zorder=0, color="lightgrey")
+plt.grid(color="lightgrey")
 plt.scatter(data["V1"],data["V2"])
 
 #gaussian mixture model for the 3 cluster variation
@@ -33,7 +33,7 @@ gmm2.fit(data)
 
 #gaussian prediction for 2 clusters
 labels = gmm2.predict(data)
-plt.grid(zorder=0, color="lightgrey")
+plt.grid(color="lightgrey")
 plt.scatter(data["V1"],data["V2"], c=labels, cmap='plasma')
 plt.show()
 
