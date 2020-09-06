@@ -6,7 +6,7 @@ from sklearn import datasets
 from sklearn.mixture import GaussianMixture
 from matplotlib import pyplot
 
-#reading in the data using the local path
+#reading in the data using the local path (change to 'ClusterPlot.csv' for other testing)
 data = pd.read_csv(r'C:\Users\viswa\Documents\UTD\Sophomore\Fall\ACM Research\Coding-Challenge\ClusterPlot.csv')
 
 #setting up the plot
